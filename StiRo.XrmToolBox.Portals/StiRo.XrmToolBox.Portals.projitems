@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>c6bb9c4f-69bd-44c1-8fe9-88246d74ca27</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>StiRo.XrmToolBox.Portals</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Factories\EntityFormMetadataFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factories\EntityFormFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factories\PublishingStateFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factories\AnnotationFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factories\WebFileFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factories\WebPageFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factories\OrganizationFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Factories\WebsiteFactory.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Annotation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\CRMEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\EntityFormMetadata.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\EntityForm.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Organization.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\PortalBuisnessRuleCondition.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\PortalBuisnessRuleAction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\PortalBuisnessRule.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\WebFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\WebPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\PublishingState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Website.cs" />
+  </ItemGroup>
+</Project>
